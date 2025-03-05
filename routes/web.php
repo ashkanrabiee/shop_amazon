@@ -23,9 +23,18 @@ use App\Http\Controllers\Admin\Ticket\{TicketCategoryController,TicketPriorityCo
 use App\Http\Controllers\Admin\Setting\SettingController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// customer HomePage
+
+use App\Http\Controllers\Customer\HomeController;
+
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [HomeController::class, 'home'])->name('customer.home');
+
 
 Route::middleware([
     'auth:sanctum',
