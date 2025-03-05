@@ -188,9 +188,9 @@ Route::prefix('admin')->group(function(){
     Route::prefix('content')->group(function(){
          //category
          Route::prefix('category')->group(function () {
-            // Route::get('/', [ContentCategoryController::class, 'index'])->middleware('role:operator,show-category')->name('admin.content.category.index');
+            
             Route::get('/', [ContentCategoryController::class, 'index'])->name('admin.content.category.index');
-            Route::get('/create', [ContentCategoryController::class, 'create'])->middleware('role:operator,create-category')->name('admin.content.category.create');
+            Route::get('/create', [ContentCategoryController::class, 'create'])->name('admin.content.category.create');
             Route::post('/store', [ContentCategoryController::class, 'store'])->name('admin.content.category.store');
             Route::get('/edit/{postCategory}', [ContentCategoryController::class, 'edit'])->name('admin.content.category.edit');
             Route::put('/update/{postCategory}', [ContentCategoryController::class, 'update'])->name('admin.content.category.update');
