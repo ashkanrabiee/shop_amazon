@@ -27,6 +27,11 @@ use App\Http\Controllers\Admin\Setting\SettingController;
 
 use App\Http\Controllers\Customer\HomeController;
 
+// Auth Customer
+
+use App\Http\Controllers\Auth\Customer\LoginRegisterController;
+
+
 
 
 // Route::get('/', function () {
@@ -34,6 +39,20 @@ use App\Http\Controllers\Customer\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'home'])->name('customer.home');
+
+
+Route::group(['namespace' => 'App\Http\Controllers\Auth'], function () {
+    Route::get('/welcome-register', [LoginRegisterController::class, 'welcomePage'])->name('auth.customer.welcome-register');
+    Route::get('/show-otp', [LoginRegisterController::class, 'showOtp'])->name('auth.customer.show-otp');
+    Route::post('/send-code', [LoginRegisterController::class, 'sendCode'])->name('auth.customer.send-code');
+    Route::get('/receive-code/{token}', [LoginRegisterController::class, 'getCode'])->name('auth.customer.get-code');
+    Route::post('/check-code/{token}', [LoginRegisterController::class, 'checkCode'])->name('auth.customer.check-code'); // این نام باید در بلید و کنترلر استفاده شود
+    Route::get('/logout', [LoginRegisterController::class, 'logout'])
+    ->name('auth.customer.logout');
+});
+ 
+
+
 
 
 Route::middleware([

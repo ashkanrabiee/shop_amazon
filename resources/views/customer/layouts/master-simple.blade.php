@@ -6,12 +6,12 @@
 
 <body>
 
-@include('customer.layouts.header')
+
 
 @yield('content')
 
 
-@include('customer.layouts.footer')
+
 
 @include('customer.layouts.script')
 @yield('script')

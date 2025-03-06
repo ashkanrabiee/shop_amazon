@@ -60,394 +60,130 @@
 
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
-                <div class="header-left">
-                    <div class="mini-cart-header">
-                        <a href="cart.html" style="color: #4a5f73;">
-                            <span class="mdi mdi-basket"></span>
-                            <span class="cart-count">2</span>
+           
+            @auth
+    <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
+        <div class="header-left">
+            <div class="mini-cart-header">
+                <a href="cart.html" style="color: #4a5f73;">
+                    <span class="mdi mdi-basket"></span>
+                    <span class="cart-count">2</span>
+                </a>
+                <div class="mini-cart-dropdown">
+                    <div class="header-cart-info-header">
+                        <div class="header-cart-info-count">2 کالا</div>
+                        <a href="#" class="header-cart-info-link">
+                            <span>مشاهده سبد خرید</span>
                         </a>
-                        <div class="mini-cart-dropdown">
-                            <div class="header-cart-info-header">
-                                <div class="header-cart-info-count">2 کالا</div>
-                                <a href="#" class="header-cart-info-link">
-                                    <span>مشاهده سبد خرید</span>
-                                </a>
-                            </div>
-                            <div class="wrapper">
-                                <div class="scrollbar" id="style-1">
-                                    <div class="force-overflow">
-                                        <ul class="header-basket-list">
-                                            <li class="js-mini-cart-item">
-                                                <a href="#" class="header-basket-list-item">
-                                                    <div class="header-basket-list-item-image">
-                                                        <img src="{{asset('customer-assets/images/product-slider-2/GalaxyS20Ultra.jpg')}}"
-                                                            alt="img-slider">
+                    </div>
+                    <div class="wrapper">
+                        <div class="scrollbar" id="style-1">
+                            <div class="force-overflow">
+                                <ul class="header-basket-list">
+                                    <li class="js-mini-cart-item">
+                                        <a href="#" class="header-basket-list-item">
+                                            <div class="header-basket-list-item-image">
+                                                <img src="{{ asset('customer-assets/images/product-slider-2/GalaxyS20Ultra.jpg') }}" alt="img-slider">
+                                            </div>
+                                            <div class="header-basket-list-item-content">
+                                                <h1 class="header-basket-list-item-title">گوشی موبایل سامسونگ مدل Galaxy S20 Ultra SM-G988B/DS دو سیم کارت ظرفیت 128 گیگابایت</h1>
+                                                <span class="header-basket-list-item-shipping-type">موجود در انبار دیجی‌کلا</span>
+                                                <div class="header-basket-list-item-footer">
+                                                    <div class="header-basket-list-item-props">
+                                                        <span class="header-basket-list-item-props-item"> ۱ عدد</span>
+                                                        <span class="header-basket-list-item-props-item">
+                                                            <span class="header-basket-list-item-color-badge" style="background: #9E9E9E"></span>
+                                                            خاکستری
+                                                        </span>
+                                                        <span class="header-basket-list-item-remove">
+                                                            <i class="mdi mdi-delete"></i>
+                                                        </span>
                                                     </div>
-                                                    <div class="header-basket-list-item-content">
-                                                        <h1 class="header-basket-list-item-title">گوشی موبایل
-                                                            سامسونگ مدل Galaxy S20 Ultra SM-G988B/DS دو سیم کارت
-                                                            ظرفیت 128 گیگابایت</h1>
-                                                        <span class="header-basket-list-item-shipping-type">موجود در
-                                                            انبار
-                                                            دیجی‌کلا</span>
-                                                        <div class="header-basket-list-item-footer">
-                                                            <div class="header-basket-list-item-props">
-                                                                <span class="header-basket-list-item-props-item"> ۱
-                                                                    عدد</span>
-                                                                <span class="header-basket-list-item-props-item">
-                                                                    <span
-                                                                        class="header-basket-list-item-color-badge"
-                                                                        style="background: #9E9E9E">
-                                                                    </span>
-                                                                    خاکستری
-                                                                </span>
-                                                                <span class="header-basket-list-item-remove">
-                                                                    <i class="mdi mdi-delete"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="js-mini-cart-item">
-                                                <a href="#" class="header-basket-list-item">
-                                                    <div class="header-basket-list-item-image">
-                                                        <img src="{{asset('customer-assets/images/product-slider-2/Huawei-WATCHFIT.jpg')}}"
-                                                            alt="img-slider">
-                                                    </div>
-                                                    <div class="header-basket-list-item-content">
-                                                        <h1 class="header-basket-list-item-title">ساعت هوشمند هوآوی
-                                                            مدل WATCH FIT</h1>
-                                                        <span class="header-basket-list-item-shipping-type">موجود در
-                                                            انبار
-                                                            دیجی‌کلا</span>
-                                                        <div class="header-basket-list-item-footer">
-                                                            <div class="header-basket-list-item-props">
-                                                                <span class="header-basket-list-item-props-item"> ۱
-                                                                    عدد</span>
-                                                                <span class="header-basket-list-item-props-item">
-                                                                    <span
-                                                                        class="header-basket-list-item-color-badge"
-                                                                        style="background: #00e676"></span>
-                                                                    سبز
-                                                                </span>
-                                                                <span class="header-basket-list-item-remove">
-                                                                    <i class="mdi mdi-delete"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="js-mini-cart-item">
-                                                <a href="#" class="header-basket-list-item">
-                                                    <div class="header-basket-list-item-image">
-                                                        <img src="{{asset('customer-assets/images/product-slider-2/NIGHT-HUNTER.jpg')}}"
-                                                            alt="img-slider">
-                                                    </div>
-                                                    <div class="header-basket-list-item-content">
-                                                        <h1 class="header-basket-list-item-title">کامپیوتر دسکتاپ
-                                                            دیویژن مدل NIGHT HUNTER</h1>
-                                                        <span class="header-basket-list-item-shipping-type">موجود در
-                                                            انبار
-                                                            دیجی‌کلا</span>
-                                                        <div class="header-basket-list-item-footer">
-                                                            <div class="header-basket-list-item-props">
-                                                                <span class="header-basket-list-item-props-item"> ۱
-                                                                    عدد</span>
-                                                                <span class="header-basket-list-item-props-item">
-                                                                    <span
-                                                                        class="header-basket-list-item-color-badge"
-                                                                        style="background: #000000"></span>
-                                                                    مشکی
-                                                                </span>
-                                                                <span class="header-basket-list-item-remove">
-                                                                    <i class="mdi mdi-delete"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-cart-info-footer">
-                                <div class="header-cart-info-total">
-                                    <span class="header-cart-info-total-text">مبلغ قابل پرداخت</span>
-                                    <p class="header-cart-info-total-amount">
-                                        <span class="header-cart-info-total-amount-number"> 6,200,000</span>
-                                        <span> تومان</span>
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="#" class="header-cart-info-submit btn btn-danger">ثبت سفارش</a>
-                                </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- سایر آیتم‌های سبد خرید -->
+                                </ul>
                             </div>
                         </div>
                     </div>
-
-                    <a href="login.html" class="login-link">
-                        <div class="btn-login">
-                            <span class="mdi mdi-account"></span>
-                            پروفایل من
-                            <div class="dropdown-menu-login">
-                                <div class="header-profile-dropdown-account">
-                                    <div class="header-profile-dropdown-user">
-                                        <div class="header-profile-dropdown-user-img">
-                                            <img src="{{asset('customer-assets/images/svg/user-profile.svg')}}" alt="profile">
-                                        </div>
-                                        <div class="header-profile-dropdown-user-info">
-                                            <p class="header-profile-dropdown-user-name">حسن شجاعی
-                                                <span class="header-profile-dropdown-user-profile-link">مشاهده حساب
-                                                    کاربری</span>
-                                            </p>
-                                        </div>
-                                        <div class="header-profile-dropdown-account">
-                                            <div class="header-profile-dropdown-account-item">
-                                                <span class="header-profile-dropdown-account-item-title">کیف
-                                                    پول</span>
-                                                <div class="header-profile-dropdown-account-item-amount">
-                                                    <span
-                                                        class="header-profile-dropdown-account-item-amount-number">۰
-                                                    </span>
-                                                    تومان
-                                                </div>
-                                            </div>
-                                            <div class="header-profile-dropdown-account-item">
-                                                <span
-                                                    class="header-profile-dropdown-account-item-title">دیجی‌کلاب</span>
-                                                <div class="header-profile-dropdown-account-item-amount">
-                                                    <span
-                                                        class="header-profile-dropdown-account-item-amount-number">۰
-                                                    </span>
-                                                    تومان
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header-profile-dropdown-actions">
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">سفارش‌های من</span>
-                                    </div>
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">جوایز دیجی‌کلاب</span>
-                                    </div>
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">خروج از حساب
-                                            کاربری</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="header-cart-info-footer">
+                        <div class="header-cart-info-total">
+                            <span class="header-cart-info-total-text">مبلغ قابل پرداخت</span>
+                            <p class="header-cart-info-total-amount">
+                                <span class="header-cart-info-total-amount-number"> 6,200,000</span>
+                                <span> تومان</span>
+                            </p>
                         </div>
-                    </a>
-                    <!-- Example single danger button -->
-                    <!-- responsive header-->
-                    <div class="responsive-header-left">
-                        <div class="btn-login-responsive">
-                            <span class="mdi mdi-account"></span>
-                            <span class="cart-count">3</span>
-                            <div class="dropdown-menu-login">
-                                <div class="header-profile-dropdown-account">
-                                    <div class="header-profile-dropdown-user">
-                                        <div class="header-profile-dropdown-user-img">
-                                            <img src="{{asset('customer-assets/images/svg/user-profile.svg')}}" alt="profile">
-                                        </div>
-                                        <div class="header-profile-dropdown-user-info">
-                                            <p class="header-profile-dropdown-user-name">حسن شجاعی
-                                                <span class="header-profile-dropdown-user-profile-link">مشاهده
-                                                    حساب کاربری</span>
-                                            </p>
-                                        </div>
-                                        <div class="header-profile-dropdown-account">
-                                            <div class="header-profile-dropdown-account-item">
-                                                <span class="header-profile-dropdown-account-item-title">کیف
-                                                    پول</span>
-                                                <div class="header-profile-dropdown-account-item-amount">
-                                                    <span
-                                                        class="header-profile-dropdown-account-item-amount-number">۰
-                                                    </span>
-                                                    تومان
-                                                </div>
-                                            </div>
-                                            <div class="header-profile-dropdown-account-item">
-                                                <span
-                                                    class="header-profile-dropdown-account-item-title">دیجی‌کلاب</span>
-                                                <div class="header-profile-dropdown-account-item-amount">
-                                                    <span
-                                                        class="header-profile-dropdown-account-item-amount-number">۰
-                                                    </span>
-                                                    تومان
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header-profile-dropdown-actions">
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">سفارش‌های من</span>
-                                    </div>
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">جوایز دیجی‌کلاب</span>
-                                    </div>
-                                    <div class="header-profile-dropdown-action-container">
-                                        <span class="header-profile-dropdown-action-link">خروج از حساب
-                                            کاربری</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                            <a href="#" class="header-cart-info-submit btn btn-danger">ثبت سفارش</a>
                         </div>
-
-                        <div class="mini-cart-header-responsive">
-                            <span class="mdi mdi-basket"></span>
-                            <div class="mini-cart-dropdown">
-                                <div class="header-cart-info-header">
-                                    <div class="header-cart-info-count">3 کالا</div>
-                                    <a href="#" class="header-cart-info-link">
-                                        <span>مشاهده سبد خرید</span>
-                                    </a>
-                                </div>
-                                <div class="wrapper">
-                                    <div class="scrollbar" id="style-1">
-                                        <div class="force-overflow">
-                                            <ul class="header-basket-list">
-                                                <li class="js-mini-cart-item">
-                                                    <a href="#" class="header-basket-list-item">
-                                                        <div class="header-basket-list-item-image">
-                                                            <img src="{{asset('customer-assets/images/product-slider-2/GalaxyS20Ultra.jpg')}}"
-                                                                alt="img-slider">
-                                                        </div>
-                                                        <div class="header-basket-list-item-content">
-                                                            <h1 class="header-basket-list-item-title">گوشی موبایل
-                                                                سامسونگ مدل Galaxy S20 Ultra SM-G988B/DS دو سیم کارت
-                                                                ظرفیت 128 گیگابایت</h1>
-                                                            <span
-                                                                class="header-basket-list-item-shipping-type">موجود
-                                                                در
-                                                                انبار
-                                                                دیجی‌کلا</span>
-                                                            <div class="header-basket-list-item-footer">
-                                                                <div class="header-basket-list-item-props">
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        ۱
-                                                                        عدد</span>
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        <span
-                                                                            class="header-basket-list-item-color-badge"
-                                                                            style="background: #9E9E9E"></span>
-                                                                        خاکستری
-                                                                    </span>
-                                                                    <span class="header-basket-list-item-remove">
-                                                                        <i class="mdi mdi-delete"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="js-mini-cart-item">
-                                                    <a href="#" class="header-basket-list-item">
-                                                        <div class="header-basket-list-item-image">
-                                                            <img src="{{asset('customer-assets/images/product-slider-2/Huawei-WATCHFIT.jpg')}}"
-                                                                alt="img-slider">
-                                                        </div>
-                                                        <div class="header-basket-list-item-content">
-                                                            <h1 class="header-basket-list-item-title">ساعت هوشمند
-                                                                هوآوی
-                                                                مدل WATCH FIT</h1>
-                                                            <span
-                                                                class="header-basket-list-item-shipping-type">موجود
-                                                                در
-                                                                انبار
-                                                                دیجی‌کلا</span>
-                                                            <div class="header-basket-list-item-footer">
-                                                                <div class="header-basket-list-item-props">
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        ۱
-                                                                        عدد</span>
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        <span
-                                                                            class="header-basket-list-item-color-badge"
-                                                                            style="background: #00e676"></span>
-                                                                        سبز
-                                                                    </span>
-                                                                    <span class="header-basket-list-item-remove">
-                                                                        <i class="mdi mdi-delete"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li class="js-mini-cart-item">
-                                                    <a href="#" class="header-basket-list-item">
-                                                        <div class="header-basket-list-item-image">
-                                                            <img src="{{asset('customer-assets/images/product-slider-2/NIGHT-HUNTER.jpg')}}"
-                                                                alt="img-slider">
-                                                        </div>
-                                                        <div class="header-basket-list-item-content">
-                                                            <h1 class="header-basket-list-item-title">کامپیوتر
-                                                                دسکتاپ
-                                                                دیویژن مدل NIGHT HUNTER</h1>
-                                                            <span
-                                                                class="header-basket-list-item-shipping-type">موجود
-                                                                در
-                                                                انبار
-                                                                دیجی‌کلا</span>
-                                                            <div class="header-basket-list-item-footer">
-                                                                <div class="header-basket-list-item-props">
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        ۱
-                                                                        عدد</span>
-                                                                    <span
-                                                                        class="header-basket-list-item-props-item">
-                                                                        <span
-                                                                            class="header-basket-list-item-color-badge"
-                                                                            style="background: #000000"></span>
-                                                                        مشکی
-                                                                    </span>
-                                                                    <span class="header-basket-list-item-remove">
-                                                                        <i class="mdi mdi-delete"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header-cart-info-footer">
-                                    <div class="header-cart-info-total">
-                                        <span class="header-cart-info-total-text">مبلغ قابل پرداخت</span>
-                                        <p class="header-cart-info-total-amount">
-                                            <span class="header-cart-info-total-amount-number"> 6,200,000</span>
-                                            <span> تومان</span>
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="header-cart-info-submit btn btn-danger">ثبت سفارش</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="question-faq"><span class="fa fa-question-circle-o"></span></button>
                     </div>
-                    <!-- responsive header-->
                 </div>
             </div>
+
+            <a href="login.html" class="login-link">
+                <div class="btn-login">
+                    <span class="mdi mdi-account"></span>
+                    پروفایل من
+                    <div class="dropdown-menu-login">
+                        <div class="header-profile-dropdown-account">
+                            <div class="header-profile-dropdown-user">
+                                <div class="header-profile-dropdown-user-img">
+                                    <img src="{{ asset('customer-assets/images/svg/user-profile.svg') }}" alt="profile">
+                                </div>
+                                <div class="header-profile-dropdown-user-info">
+                                    <p class="header-profile-dropdown-user-name">حسن شجاعی
+                                        <span class="header-profile-dropdown-user-profile-link">مشاهده حساب کاربری</span>
+                                    </p>
+                                </div>
+                                <div class="header-profile-dropdown-account">
+                                    <div class="header-profile-dropdown-account-item">
+                                        <span class="header-profile-dropdown-account-item-title">کیف پول</span>
+                                        <div class="header-profile-dropdown-account-item-amount">
+                                            <span class="header-profile-dropdown-account-item-amount-number">۰</span>
+                                            تومان
+                                        </div>
+                                    </div>
+                                    <div class="header-profile-dropdown-account-item">
+                                        <span class="header-profile-dropdown-account-item-title">دیجی‌کلاب</span>
+                                        <div class="header-profile-dropdown-account-item-amount">
+                                            <span class="header-profile-dropdown-account-item-amount-number">۰</span>
+                                            تومان
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-profile-dropdown-actions">
+                            <div class="header-profile-dropdown-action-container">
+                                <span class="header-profile-dropdown-action-link">سفارش‌های من</span>
+                            </div>
+                            <div class="header-profile-dropdown-action-container">
+                                <a href="{{ route('auth.customer.logout') }}"><span class="header-profile-dropdown-action-link">خروج از حساب</span></a>
+                            </div>
+                            <div class="header-profile-dropdown-action-container">
+                                <span class="header-profile-dropdown-action-link">جوایز دیجی‌کلاب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
+    </div>
+@endauth
+@guest
+    <div class="container mt-4 text-center">
+        <a href="{{ route('auth.customer.welcome-register') }}" class="btn btn-lg btn-gradient shadow-lg rounded-pill px-5 py-3 animate-btn">
+            <i class="fas fa-user-lock me-2"></i> ثبت‌نام یا ورود
+        </a>
+    </div>
+@endguest
+
+
+
+</div>
         <!-- Start megamenu-->
         <nav class="main-menu">
             <ul class="new-list-menu">

@@ -2,8 +2,10 @@
 
 namespace App\Http\Services\Image;
 
+
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Config;
+
 
 class ImageCacheService
 {
