@@ -110,11 +110,11 @@
 
 
             <section class="sidebar-part-title">بخش کاربران</section>
-            <a href="" class="sidebar-link">
+            <a href="{{ route('admin.user.admin-user.index') }}" class="sidebar-link">
                 <i class="fas fa-bars"></i>
                 <span>کاربران ادمین</span>
             </a>
-            <a href="" class="sidebar-link">
+            <a href="{{ route('admin.user.customer.index') }}" class="sidebar-link">
                 <i class="fas fa-bars"></i>
                 <span>مشتریان</span>
             </a>
@@ -125,8 +125,8 @@
                     <i class="fas fa-angle-left angle"></i>
                 </section>
                 <section class="sidebar-dropdown">
-                    <a href="">مدیریت نقش ها</a>
-                    <a href="">مدیریت دسترسی ها</a>
+                    <a href="{{ route('admin.user.role.index') }}">مدیریت نقش ها</a>
+                    <a href="{{ route('admin.user.permission.index') }}">مدیریت دسترسی ها</a>
                     <a href="">فروش شگفت انگیز</a>
                 </section>
             </section>
@@ -179,7 +179,7 @@
 
 
             <section class="sidebar-part-title">تنظیمات</section>
-            <a href="" class="sidebar-link">
+            <a href="{{ route('admin.setting.index') }}" class="sidebar-link">
                 <i class="fas fa-bars"></i>
                 <span>تنظیمات</span>
             </a>
