@@ -17,6 +17,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.0",
+        "morilog/jalali": "^3.4",
         "saeedpooyanfar/zarinpal": "^5.0",
         "shetabit/payment": "^6.1"
     },

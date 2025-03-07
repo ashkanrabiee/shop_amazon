@@ -171,7 +171,7 @@
                 <i class="fas fa-bars"></i>
                 <span>اعلامیه ایمیلی</span>
             </a>
-            <a href="" class="sidebar-link">
+            <a href="{{ route('admin.notify.sms.index') }}" class="sidebar-link">
                 <i class="fas fa-bars"></i>
                 <span>اعلامیه پیامکی</span>
             </a>
