@@ -76,28 +76,30 @@
                                 </label>
                             </td>
                             <td>
-                                @forelse($admin->roles ?? [] as $role)
-                                <div>
-                                    {{ $role->name }}
-                                </div>
-                            @empty
-                                <div class="text-danger">
-                                    نقشی یافت نشد
-                                </div>
-                            @endforelse
-                            
+                                @php
+                                $adminRoles = $admin->roles ?? collect(); // مقدار پیش‌فرض
+                                @endphp
+
+                                @forelse($adminRoles as $role)
+                                <div>{{ $role->name }}</div>
+                                @empty
+                                <div class="text-danger">نقشی یافت نشد</div>
+                                @endforelse
+
                             </td>
                             <td>
-                                @forelse($admin->permissions ?? [] as $permission)
-                                <div>
-                                    {{ $permission->name }}
-                                </div>
-                            @empty
-                                <div class="text-danger">
-                                    سطوح دسترسی یافت نشد
-                                </div>
-                            @endforelse
+                                @php
+                                $permissions = $permissions ?? collect(); // مقدار پیش‌فرض
+                            @endphp
                             
+                            @forelse($permissions as $permission)
+                                <div>{{ $permission->name }}</div>
+                            @empty
+                                <div class="text-danger">سطوح دسترسی یافت نشد</div>
+                            @endforelse
+                            {{-- {{ dd($admin->roles ?? 'roles وجود ندارد', $permissions ?? 'permissions وجود ندارد') }} --}}
+
+                                
                             </td>
                             <td class="width-22-rem text-left">
                                 <a href="{{ route('admin.user.admin-user.permissions', $admin->id) }}"
