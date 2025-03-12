@@ -59,13 +59,23 @@ function convertEnglishToPersian($number)
 }
 
 
-
 function priceFormat($price)
 {
+    // بررسی اینکه آیا $price از نوع عددی است یا خیر
+    if (!is_numeric($price)) {
+        // اگر عدد نباشد، به صورت پیش‌فرض عدد 0 را در نظر می‌گیریم
+        $price = 0;
+    }
+    
+    // فرمت کردن قیمت به هزارگان
     $price = number_format($price, 0, '/', '،');
+    
+    // تبدیل اعداد انگلیسی به فارسی (در صورت نیاز)
     $price = convertEnglishToPersian($price);
+    
     return $price;
 }
+
 
 
 function validateNationalCode($nationalCode)
