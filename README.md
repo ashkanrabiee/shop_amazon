@@ -75,11 +75,8 @@ Admins can easily send messages to users via:
 📸 Screenshots (Coming Soon)
 Include some images or GIFs of your admin panel and product listing for more impact.
 
-
-`‍‍‍``bash
 # Clone the repository
-git clone https://github.com/your-username/ecommerce-project.git
-cd ecommerce-project
+git clone https://github.com/ashkanrabiee/shop_amazon.git
 
 # Install backend and frontend dependencies
 composer install
@@ -94,8 +91,6 @@ php artisan migrate --seed
 
 # Start the development server
 php artisan serve
-
-```
 
 
 📝 License
