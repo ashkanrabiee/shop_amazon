@@ -76,6 +76,7 @@ Admins can easily send messages to users via:
 Include some images or GIFs of your admin panel and product listing for more impact.
 
 
+`‍‍‍``bash
 # Clone the repository
 git clone https://github.com/your-username/ecommerce-project.git
 cd ecommerce-project
@@ -94,7 +95,7 @@ php artisan migrate --seed
 # Start the development server
 php artisan serve
 
-
+```
 
 
 📝 License
