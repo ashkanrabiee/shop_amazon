@@ -76,22 +76,24 @@ Admins can easily send messages to users via:
 Include some images or GIFs of your admin panel and product listing for more impact.
 
 
-➜ git clone https://github.com/your-username/ecommerce-project.git
-➜ cd ecommerce-project
+# Clone the repository
+git clone https://github.com/your-username/ecommerce-project.git
+cd ecommerce-project
 
-# 📦 Install dependencies
-➜ composer install
-➜ npm install && npm run dev
+# Install backend and frontend dependencies
+composer install
+npm install && npm run dev
 
-# ⚙️ Set up environment
-➜ cp .env.example .env
-➜ php artisan key:generate
+# Configure environment variables
+cp .env.example .env
+php artisan key:generate
 
-# 🛠 Run database migrations with seed data
-➜ php artisan migrate --seed
+# Run database migrations with demo data
+php artisan migrate --seed
 
-# 🚀 Start the development server
-➜ php artisan serve
+# Start the development server
+php artisan serve
+
 
 
 
